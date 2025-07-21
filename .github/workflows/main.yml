@@ -7,9 +7,10 @@ on:
     branches: [ main ]
 
 jobs:
-  runs-on: ubuntu-lastest
+  build:
+    runs-on: ubuntu-lastest
 
-  steps:
-    - name: hello world
-      run: echo "Hello, world!"
+    steps:
+      - name: hello world
+        run: echo "Hello, world!"
 
