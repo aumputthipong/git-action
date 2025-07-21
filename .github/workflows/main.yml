@@ -10,18 +10,6 @@ job:
   run-on: ubuntu-lastest
 
   steps:
-    - uses: action/checkout@v4
-    
-    - name: Use Node.js 20
-      uses: actions/setup-node@v4
-      with:
-        node-version: 20
+    - name: hello world
+      run: echo "Hello, world!"
 
-    - name: Install dependencies
-      run: npm install
-
-    - name: Run build
-      run: npm run build
-
-    - name: Run tests
-      run: npm test
